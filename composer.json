@@ -1,6 +1,6 @@
 {
     "require": {
-        "creativelittledots/wp-kit-core": "dev-master"
+        "creativelittledots/wp-kit-core": "*"
     },
     "autoload": {
         "psr-4": {
