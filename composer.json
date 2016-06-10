@@ -1,0 +1,14 @@
+{
+    "require": {
+        "creativelittledots/wp-kit-core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+	        "config/bootstrap.php",
+	        "app/routes.php"
+        ]
+    }
+}
