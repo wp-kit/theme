@@ -1,4 +1,8 @@
 {
+	"name": "creativelittledots/wp-kit",
+    "description": "WP Kit theme",
+    "keywords": ["wpkit"],
+    "license": "MIT",
     "require": {
         "creativelittledots/wp-kit-core": "*"
     },
