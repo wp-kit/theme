@@ -25,7 +25,7 @@ To get going with the framework you should:
   * Download the [WP Kit Installer](https://github.com/creativelittledots/WP-Kit-Installer) and install it
   * Run the following command
   
-  ```
+  ```php
   wpkit new themename
   ```
   
