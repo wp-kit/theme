@@ -26,7 +26,7 @@ To get going with the framework you should:
   * Run the following command
   
   ```php
-  wpkit new themename
+  wpkit new theme themename
   ```
   
   * That's it, get coding!
