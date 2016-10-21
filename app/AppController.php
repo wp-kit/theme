@@ -7,6 +7,14 @@
 	class AppController extends Controller {
     	
     	public $scripts = [
+	    	'framework/framework.min.js',
+	    	'application/parties/foundation.min.js',
+	    	'application/parties/svg4everybody.min.js',
+	    	'application/parties/slick.min.js',
+	    	[
+        	    'file' => 'parties/modernizr.js',
+        	    'in_footer' => false,
+            ],
         	'style.css',
     	];
     	
@@ -14,7 +22,7 @@
 	        
 	        $this->scripts = array_merge($this->scripts, [
     	        [
-    	            'file' => 'app.min.js',
+    	            'file' => 'application/application.min.js',
     	            'localize' => [
         	            'name' => 'myAjax',
         	            'data' => [ 
