@@ -4,9 +4,13 @@
 	
 		<div class="size-12 size-8-m size-4-l grid--item">
 			
-			<h2><?php the_title(); ?></h2>
+			<article <?php post_class(); ?>>
 			
-			<?php the_content(); ?>
+				<h2><?php the_title(); ?></h2>
+				
+				<?php the_content(); ?>
+				
+			</article>
             
 		</div>
 	            
