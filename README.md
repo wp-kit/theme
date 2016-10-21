@@ -1,4 +1,4 @@
-# [WP Kit](http://creativelittle.uk/wpkit)
+# [WP Kit](http://creativelittledots.github.io/wp-kit/)
 
 The Creative Little WP Kit is a MCEDC (Model Component Event Driven Controller) solution for Wordpress.
 
@@ -22,7 +22,7 @@ Composer
 
 To get going with the framework you should:
 
-  * Download the [WP Kit Installer](https://github.com/creativelittledots/WP-Kit-Installer) and install it
+  * Download the [WP Kit Installer](https://github.com/creativelittledots/wp-kit-installer) and install it
   * Run the following command
   
   ```php
@@ -33,7 +33,7 @@ To get going with the framework you should:
 
 ## Official Documentation
 
-Documentation for the framework can be found at our [Git Docs](http://creativelittledots.github.io/WP-Kit/).
+Documentation for the framework can be found at our [Git Docs](http://creativelittledots.github.io/wp-kit/).
 
 ## Security Vulnerabilities
 
