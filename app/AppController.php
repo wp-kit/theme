@@ -9,10 +9,8 @@
     	public $scripts = [
 	    	'framework/framework.min.js',
 	    	'application/parties/foundation.min.js',
-	    	'application/parties/svg4everybody.min.js',
-	    	'application/parties/slick.min.js',
 	    	[
-        	    'file' => 'parties/modernizr.js',
+        	    'file' => 'application/parties/modernizr.js',
         	    'in_footer' => false,
             ],
         	'style.css',

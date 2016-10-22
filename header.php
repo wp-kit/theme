@@ -36,7 +36,16 @@
 				
 				<div class="size-6 size-8-m size-9-l grid--item">
 			    
-				    <?php do_action( 'app_header_menu' ); ?>
+				    <?php 
+					    
+					    /**
+						 * app_header_menu hook.
+						 *
+						 * @hooked AppController@display_app_header_menu - 10
+						 */
+					    do_action( 'app_header_menu' );
+					    
+					?>
 				    
 				</div>
 			

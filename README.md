@@ -1,4 +1,4 @@
-# [WP Kit](http://creativelittledots.github.io/wp-kit/)
+# [WP Kit (Theme)](http://creativelittledots.github.io/wp-kit/)
 
 The Creative Little WP Kit is a MCEDC (Model Component Event Driven Controller) solution for Wordpress.
 
