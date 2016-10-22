@@ -1,6 +1,8 @@
 # [WP Kit (Theme)](http://creativelittledots.github.io/wp-kit/)
 
-The Creative Little WP Kit is a MCEDC (Model Component Event Driven Controller) solution for Wordpress.
+The Creative Little WP Kit is a RAD (Rapid Application Development) solution for Wordpress, for use in your theme.
+
+WPKit use MCEDC (Model Component Event Driven Controller) methodology, an combination of MVC and Event Driven architecture which is inherent in Wordpress.
 
 It allows fast Model creation using our Model Layer technology, allowing you to layer on top of the Post or Taxonomy Model in Wordpress to generate Post Types & Taxonomies.
 
