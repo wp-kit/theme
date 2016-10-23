@@ -4,6 +4,7 @@
     "keywords": ["wpkit"],
     "license": "MIT",
     "require": {
+	    "tgmpa/tgm-plugin-activation": "2.5.0",
         "creativelittledots/wp-kit-core": "*"
     },
     "autoload": {
@@ -14,5 +15,9 @@
 	        "config/bootstrap.php",
 	        "app/routes.php"
         ]
-    }
+    },
+    "config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
 }
