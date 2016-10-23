@@ -1,5 +1,7 @@
 <?php
 	
+	namespace App;
+	
 	// if we don't have WPKit at this point we probably should die
 	    
 	if( ! class_exists('WPKit\\Core\Application') ) {
@@ -10,4 +12,4 @@
 	
 	// initialise WPKit to invoke classes etc.
 
-	wpkit()->boot();
+	wpkit()->setNamespace( __NAMESPACE__ )->boot();
