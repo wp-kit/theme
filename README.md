@@ -20,9 +20,7 @@ WPKit Installer
 
 Composer
 
-## Setup
-
-To get going with the framework you should:
+## Installation (Via WPKit Installer)
 
   * Download the [WP Kit Installer](https://github.com/creativelittledots/wp-kit-installer) and install it
   * Run the following command
@@ -32,6 +30,21 @@ To get going with the framework you should:
   ```
   
   * That's it, get coding!
+  
+## Installation (Via Download)
+
+  * Download this repo and unzip to your themes folder
+  * Name the folder whatever you want your theme to be called
+  * Navigate to your theme folder in Terminal
+  ```php
+  cd /path/to/your/new/theme/folder
+  ```
+  * [Installer Composer](https://getcomposer.org/download/)
+  * Then finally run the following command to update Composer which will install WP Kit Core
+  
+  ```php
+  composer update
+  ```
 
 ## Official Documentation
 
