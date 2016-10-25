@@ -35,11 +35,13 @@ Composer
 
   * Download this repo and unzip to your themes folder
   * Name the folder whatever you want your theme to be called
-  * Navigate to your theme folder in Terminal
+  * [Installer Composer](https://getcomposer.org/download/)
+   * Navigate to your theme folder in Terminal
+   
   ```php
   cd /path/to/your/new/theme/folder
   ```
-  * [Installer Composer](https://getcomposer.org/download/)
+  
   * Then finally run the following command to update Composer which will install WP Kit Core
   
   ```php
