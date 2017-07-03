@@ -3,6 +3,8 @@
 	namespace App\Controllers;
 	
 	use WPKit\Core\Controller;
+	use Timber;
+	use TimberMenu;
 	
 	class AppController extends Controller {
     	
