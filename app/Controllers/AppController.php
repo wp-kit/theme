@@ -74,6 +74,8 @@
 			
 			add_filter( 'script_loader_tag', array($this, 'clean_script_tag') );
 			
+			add_action( 'wp_footer', array($this, 'deregister_scripts') );
+			
 			parent::beforeFilter();
 			
 		}
@@ -187,6 +189,12 @@
 		        
 		    return $src;
 		    
+		}
+		
+		public function deregister_scripts(){
+    
+		    wp_deregister_script( 'wp-embed' );
+
 		}
 		
 	}
