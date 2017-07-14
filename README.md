@@ -20,13 +20,13 @@ WPKit Installer
 
 Composer
 
-## Installation (Via WPKit Installer)
+## Installation (Via Composer)
 
-  * Download the [WP Kit Installer](https://github.com/creativelittledots/wp-kit-installer) and install it
-  * Run the following command
+  * Download [Composer](https://getcomposer.org/download/) and install it
+  * Run the following command within your wp-content/themes folder
   
   ```php
-  wpkit new theme themename
+  composer create-project creativelittledots/wp-kit
   ```
   
   * That's it, get coding!
@@ -47,10 +47,6 @@ Composer
   ```php
   composer update
   ```
-
-## Official Documentation
-
-Documentation for the framework can be found at our [Git Docs](http://creativelittledots.github.io/wp-kit/).
 
 ## Security Vulnerabilities
 
