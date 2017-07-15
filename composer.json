@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
 	    "tgmpa/tgm-plugin-activation": "2.5.0",
-        "creativelittledots/wp-kit-core": "*"
+        "wp-kit/core": "1.*"
     },
     "autoload": {
         "psr-4": {
