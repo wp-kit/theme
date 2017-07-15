@@ -16,8 +16,6 @@ Wordpress 4+
 
 PHP 5.6+
 
-WPKit Installer
-
 Composer
 
 ## Installation (Via Composer)
