@@ -1,6 +1,8 @@
-# [WP Kit (Theme)](http://creativelittledots.github.io/wp-kit/)
+# WP Kit (Theme)
 
-The Creative Little WP Kit is a RAD (Rapid Application Development) solution for Wordpress, for use in your theme.
+**This repo is being discontinued to make way for [Themosis Framework](http://framework.themosis.com/). Themosis Framework works as a framework for Wordpress Themes and Plugins which makes this repo redundant.** 
+
+WPKit is a RAD (Rapid Application Development) solution for Wordpress.
 
 WPKit use MCEDC (Model Component Event Driven Controller) methodology, an combination of MVC and Event Driven architecture which is inherent in Wordpress.
 
@@ -24,7 +26,7 @@ Composer
   * Run the following command within your wp-content/themes folder
   
   ```php
-  composer create-project creativelittledots/wp-kit
+  composer create-project wp-kit/theme
   ```
   
   * That's it, get coding!
@@ -52,4 +54,4 @@ If you discover a security vulnerability within WP Kit, please send an e-mail to
 
 ## License
 
-Creative Little WP Kit is open-sourced software licensed under the MIT License.
+WPKit Theme is open-sourced software licensed under the MIT License.
