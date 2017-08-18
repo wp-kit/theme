@@ -4,9 +4,7 @@
 
 ```wp-kit``` is a ```RAD``` (Rapid Application Development) solution for ```Wordpress```.
 
-```wp-kit``` use ```MCEDC``` (Model Component Event Driven Controller) methodology, an combination of ```MVC``` and ```Event Driven``` architecture which is inherent in Wordpress.
-
-```Timber``` (Twig) has been implemented which allows for component segregation for use in Wordpress templates.
+[View the Docs](https://github.com/wp-kit/theme/docs)
 
 ## Requirements
 
