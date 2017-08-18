@@ -1,10 +1,12 @@
 # wp-kit/theme
 
-**This repo is being discontinued to make way for [```Themosis```](http://framework.themosis.com/) Framework. Themosis Framework works as a framework for Wordpress Themes and Plugins which makes this repo redundant.** 
-
 ```wp-kit``` is a ```RAD``` (Rapid Application Development) solution for ```Wordpress```.
 
 [View the Docs](https://github.com/wp-kit/theme/docs)
+
+## Discontinued
+
+This repo is being discontinued to make way for [```Themosis```](http://framework.themosis.com/) Framework. Themosis Framework works as a framework for Wordpress Themes and Plugins which makes this repo redundant.
 
 ## Requirements
 
