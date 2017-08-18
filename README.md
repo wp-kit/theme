@@ -1,16 +1,16 @@
-# WPKit (Theme)
+# wp-kit/theme
 
-**This repo is being discontinued to make way for [Themosis Framework](http://framework.themosis.com/). Themosis Framework works as a framework for Wordpress Themes and Plugins which makes this repo redundant.** 
+**This repo is being discontinued to make way for [```Themosis Framework```](http://framework.themosis.com/). Themosis Framework works as a framework for Wordpress Themes and Plugins which makes this repo redundant.** 
 
-WPKit is a RAD (Rapid Application Development) solution for Wordpress.
+```wp-kit``` is a ```RAD``` (Rapid Application Development) solution for ```Wordpress```.
 
-WPKit use MCEDC (Model Component Event Driven Controller) methodology, an combination of MVC and Event Driven architecture which is inherent in Wordpress.
+```wp-kit``` use ```MCEDC``` (Model Component Event Driven Controller) methodology, an combination of ```MVC``` and ```Event Driven``` architecture which is inherent in Wordpress.
 
-It allows fast Model creation using our Model Layer technology, allowing you to layer on top of the Post or Taxonomy Model in Wordpress to generate Post Types & Taxonomies.
+It allows fast Model creation using our Model Layer technology, allowing you to layer on top of the ```Post``` or ```Taxonomy``` Model in Wordpress to generate Post Types & Taxonomies.
 
 It also allows for grouping of Events (Actions / Filters) in Controllers by invoking them on specified actions and conditions.
 
-Timber (Twig) has been implemented which allows for component segregation for use in Wordpress templates.
+```Timber``` (Twig) has been implemented which allows for component segregation for use in Wordpress templates.
 
 ## Requirements
 
@@ -54,4 +54,4 @@ If you discover a security vulnerability within WP Kit, please send an e-mail to
 
 ## License
 
-WPKit Theme is open-sourced software licensed under the MIT License.
+wp-kit/theme is open-sourced software licensed under the MIT License.
