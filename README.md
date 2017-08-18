@@ -6,10 +6,6 @@
 
 ```wp-kit``` use ```MCEDC``` (Model Component Event Driven Controller) methodology, an combination of ```MVC``` and ```Event Driven``` architecture which is inherent in Wordpress.
 
-It allows fast Model creation using our Model Layer technology, allowing you to layer on top of the ```Post``` or ```Taxonomy``` Model in Wordpress to generate Post Types & Taxonomies.
-
-It also allows for grouping of Events (Actions / Filters) in Controllers by invoking them on specified actions and conditions.
-
 ```Timber``` (Twig) has been implemented which allows for component segregation for use in Wordpress templates.
 
 ## Requirements
