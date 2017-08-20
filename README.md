@@ -6,7 +6,11 @@
 
 ## Discontinued
 
-This repo is being discontinued to make way for [```Themosis```](http://framework.themosis.com/) Framework. Themosis Framework works as a framework for Wordpress Themes and Plugins which makes this repo redundant.
+This repo is being discontinued to make way for [```Themosis```](http://framework.themosis.com/) Framework. 
+
+It is discontinued in the sense that there will be no further feature updates on the repo but it will continue to be supported in terms of bug fixes and minor improvements.
+
+Themosis Framework works as a framework for Wordpress Themes and Plugins which makes this repo redundant.
 
 ## Requirements
 
