@@ -4,7 +4,7 @@
 
 [View the Docs](https://github.com/wp-kit/theme/docs)
 
-## When should you use this wp-kit/theme?
+## When should you use wp-kit/theme?
 
 If you are looking for an ```RAD``` for Wordpress and have come across [```Themosis Framework```](http://framework.themosis.com/), then you should know that ```wp-kit/theme``` is to [```themosis/theme```](https://github.com/themosis/theme) as ```laravel/lumen``` is to ```laravel/framework```.
 
