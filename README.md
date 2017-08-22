@@ -26,6 +26,10 @@ If you do not need these features then ```wp-kit/theme``` could be for you comes
 * Invoke Controllers on Conditions
 * Components / Views
 
+```wp-kit/theme``` also comes with further features such as:
+
+* Shortcode Management
+
 ## Requirements
 
 Wordpress 4+
