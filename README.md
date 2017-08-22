@@ -1,30 +1,14 @@
-# wp-kit/theme
+# WPKit (Theme)
 
-```wp-kit``` is a [```RAD```](https://en.wikipedia.org/wiki/Rapid_application_development) (Rapid Application Development) solution for ```Wordpress```.
+WPKit is a RAD (Rapid Application Development) solution for Wordpress.
 
-[View the Docs](https://github.com/wp-kit/theme/docs)
+WPKit use MCEDC (Model Component Event Driven Controller) methodology, an combination of MVC and Event Driven architecture which is inherent in Wordpress.
 
-## When should you use this wp-kit/theme?
+It allows fast Model creation using our Model Layer technology, allowing you to layer on top of the Post or Taxonomy Model in Wordpress to generate Post Types & Taxonomies.
 
-If you are looking for an ```RAD``` for Wordpress and have come across [```Themosis Framework```](http://framework.themosis.com/), then you should know that ```wp-kit/theme``` is to [```themosis/theme```](https://github.com/themosis/theme) as ```laravel/lumen``` is to ```laravel/framework```.
+It also allows for grouping of Events (Actions / Filters) in Controllers by invoking them on specified actions and conditions.
 
-The benefit of using ```wp-kit/theme``` instead of [```themosis/theme```]((https://github.com/themosis/themosis)) is that you do not need to install the ```themosis/themosis``` environment.
-
-You should use ```Themosis``` is you require any handling of following:
-
-* Routes
-* Authentication 
-
-This is because ```themosis/themosis``` intercepts and handles the request to allow for such things as middleware at a higher level outside of the theme.
-
-If you do not need these features then ```wp-kit/theme``` could be for you comes packaged with several ```Themosis``` features such as:
-
-* ServiceProvider Config
-* PostType Registration
-* Taxonomy Registration
-* Shortcode Registration
-* Invoke Controllers on Conditions
-* Components / Views
+Timber (Twig) has been implemented which allows for component segregation for use in Wordpress templates.
 
 ## Requirements
 
@@ -34,13 +18,33 @@ PHP 5.6+
 
 Composer
 
-## Installation
+## Installation (Via Composer)
 
-Download [Composer](https://getcomposer.org/download/) and install using this command
+  * Download [Composer](https://getcomposer.org/download/) and install it
+  * Run the following command within your wp-content/themes folder
+  
+  ```php
+  composer create-project wp-kit/theme
+  ```
+  
+  * That's it, get coding!
+  
+## Installation (Via Download)
 
- ```php
- composer create-project wp-kit/theme
- ```
+  * Download this repo and unzip to your themes folder
+  * Name the folder whatever you want your theme to be called
+  * [Installer Composer](https://getcomposer.org/download/)
+   * Navigate to your theme folder in Terminal
+   
+  ```php
+  cd /path/to/your/new/theme/folder
+  ```
+  
+  * Then finally run the following command to update Composer which will install WP Kit Core
+  
+  ```php
+  composer update
+  ```
 
 ## Security Vulnerabilities
 
@@ -48,4 +52,4 @@ If you discover a security vulnerability within WP Kit, please send an e-mail to
 
 ## License
 
-wp-kit/theme is open-sourced software licensed under the MIT License.
+WPKit Theme is open-sourced software licensed under the MIT License.
