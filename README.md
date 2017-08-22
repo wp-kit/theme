@@ -4,13 +4,25 @@
 
 [View the Docs](https://github.com/wp-kit/theme/docs)
 
-## Discontinued
+## When should you use this wp-kit/theme?
 
-This repo is being discontinued to make way for [```Themosis Framework```](http://framework.themosis.com/). 
+If you are looking for an ```RAD``` for Wordpress and have come across [```Themosis Framework```](http://framework.themosis.com/), then you should know that ```wp-kit/theme``` is to ```themosis/theme``` as ```laravel/lumen``` is to ```laravel/framework```.
 
-It is discontinued in the sense that there will be no further feature updates on the repo but it will continue to be supported in terms of bug fixes and minor improvements.
+You should use ```Themosis``` is you require any handling of following:
 
-```Themosis Framework``` works as a framework for Wordpress Themes and Plugins which makes this repo redundant.
+* Routes
+* Authentication 
+
+This is because [```themosis/themosis```](https://github.com/themosis/themosis) intercepts and handles the request to allow for such things as middleware at a higher level outside of the theme.
+
+If you do not need these features then ```wp-kit/theme``` could be for you comes packaged with several ```Themosis``` features such as:
+
+* ServiceProvider Config
+* PostType Registration
+* Taxonomy Registration
+* Shortcode Registration
+* Invoke Controllers on Conditions
+* Components / Views
 
 ## Requirements
 
