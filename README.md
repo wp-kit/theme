@@ -22,7 +22,7 @@ Composer
 
 ## Installation (Via Composer)
 
- * Download [Composer](https://getcomposer.org/download/) and install it
+Download [Composer](https://getcomposer.org/download/) and install using this command
 
  ```php
  composer create-project wp-kit/theme
