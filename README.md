@@ -23,11 +23,12 @@ If you do not need these features then ```wp-kit/theme``` could be for you comes
 * PostType Registration
 * Taxonomy Registration
 * Invoke Controllers on Conditions
-* Components / Views
+* View Handling
 
 ```wp-kit/theme``` also comes with further features such as:
 
 * Shortcode Registration
+* Shortcode View Handling
 
 ## Requirements
 
