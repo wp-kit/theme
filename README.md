@@ -20,7 +20,7 @@ PHP 5.6+
 
 Composer
 
-## Installation (Via Composer)
+## Installation
 
 Download [Composer](https://getcomposer.org/download/) and install using this command
 
