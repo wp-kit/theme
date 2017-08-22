@@ -6,16 +6,16 @@
 
 ## When should you use this wp-kit/theme?
 
-If you are looking for an ```RAD``` for Wordpress and have come across [```Themosis Framework```](http://framework.themosis.com/), then you should know that ```wp-kit/theme``` is to ```themosis/theme``` as ```laravel/lumen``` is to ```laravel/framework```.
+If you are looking for an ```RAD``` for Wordpress and have come across [```Themosis Framework```](http://framework.themosis.com/), then you should know that ```wp-kit/theme``` is to [```themosis/theme```](https://github.com/themosis/theme) as ```laravel/lumen``` is to ```laravel/framework```.
 
-The benefit of using ```wp-kit/theme``` instead of ```themosis/theme``` is that you do not need to install the ```themosis/themosis``` environment.
+The benefit of using ```wp-kit/theme``` instead of [```themosis/theme```]((https://github.com/themosis/themosis)) is that you do not need to install the ```themosis/themosis``` environment.
 
 You should use ```Themosis``` is you require any handling of following:
 
 * Routes
 * Authentication 
 
-This is because [```themosis/themosis```](https://github.com/themosis/themosis) intercepts and handles the request to allow for such things as middleware at a higher level outside of the theme.
+This is because ```themosis/themosis``` intercepts and handles the request to allow for such things as middleware at a higher level outside of the theme.
 
 If you do not need these features then ```wp-kit/theme``` could be for you comes packaged with several ```Themosis``` features such as:
 
