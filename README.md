@@ -16,6 +16,8 @@ You should use ```Themosis``` or ```Assely``` is you require any handling of fol
 
 * Routes
 * Authentication 
+* Metaboxes
+* Custom Fields
 
 If you do not need these features then ```wp-kit/theme``` could be for you comes packaged with several ```Themosis``` and ```Assely``` features such as:
 
