@@ -8,7 +8,7 @@
 
 If you are looking for an ```RAD``` for Wordpress and have come across [```Themosis Framework```](http://framework.themosis.com/), then you should know that ```wp-kit/theme``` is to ```themosis/theme``` as ```laravel/lumen``` is to ```laravel/framework```.
 
-The benefits of using ```wp-kit/theme``` instead of ```themosis/theme``` is that you do not need to install the ```themosis/themosis``` environment.
+The benefit of using ```wp-kit/theme``` instead of ```themosis/theme``` is that you do not need to install the ```themosis/themosis``` environment.
 
 You should use ```Themosis``` is you require any handling of following:
 
