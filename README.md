@@ -1,6 +1,6 @@
 # wp-kit/theme
 
-```wp-kit``` is a ```RAD``` (Rapid Application Development) solution for ```Wordpress```.
+```wp-kit``` is a [```RAD```](https://en.wikipedia.org/wiki/Rapid_application_development) (Rapid Application Development) solution for ```Wordpress```.
 
 [View the Docs](https://github.com/wp-kit/theme/docs)
 
@@ -22,31 +22,11 @@ Composer
 
 ## Installation (Via Composer)
 
-  * Download [Composer](https://getcomposer.org/download/) and install it
-  * Run the following command within your wp-content/themes folder
-  
-  ```php
-  composer create-project wp-kit/theme
-  ```
-  
-  * That's it, get coding!
-  
-## Installation (Via Download)
+ * Download [Composer](https://getcomposer.org/download/) and install it
 
-  * Download this repo and unzip to your themes folder
-  * Name the folder whatever you want your theme to be called
-  * [Installer Composer](https://getcomposer.org/download/)
-   * Navigate to your theme folder in Terminal
-   
-  ```php
-  cd /path/to/your/new/theme/folder
-  ```
-  
-  * Then finally run the following command to update Composer which will install WP Kit Core
-  
-  ```php
-  composer update
-  ```
+ ```php
+ composer create-project wp-kit/theme
+ ```
 
 ## Security Vulnerabilities
 
