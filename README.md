@@ -31,6 +31,7 @@ If you do not need these features then ```wp-kit/theme``` could be for you comes
 
 * Shortcode Registration
 * Shortcode View Handling
+* Twig (not in Assely)
 
 ## Requirements
 
