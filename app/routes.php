@@ -1,13 +1,11 @@
 <?php
     
-    // Set your invoked calls here
-    
     /**
      * First we invoke the main AppController using invoke() helper
      *
-     * @var $callback ( string / array / callable )
-     * @var $hook ( string )
-     * @var $condition ( string / callable )
-     * @var $priority ( int )
+     * @param $callback ( string / array / callable )
+     * @param $hook ( string )
+     * @param $condition ( string / callable )
+     * @param $priority ( int )
      */
     invoke( 'AppController' );

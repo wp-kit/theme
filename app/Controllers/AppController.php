@@ -8,6 +8,11 @@
 	
 	class AppController extends Controller {
     	
+    	/**
+	     * Scripts and styles to enqueue when this controller is invoked
+	     *
+	     * @var Array
+	     */
     	public $scripts = [
 	    	'framework/framework.min.js',
 	    	'application/parties/foundation.min.js',
@@ -18,6 +23,11 @@
         	'style.css',
     	];
     	
+    	/**
+	     * Get scripts and styles, where any manipulation of localize should be added
+	     *
+	     * @return Array
+	     */
     	public function getScripts() {
 	        
 	        $this->scripts = array_merge($this->scripts, [
@@ -38,6 +48,11 @@
 			
 		}
 		
+		/**
+	     * Filter called when Controller is invoked, this is where any actions and filters should be added
+	     *
+	     * @return Void
+	     */
 		public function beforeFilter() {
 			
 			add_action( 'app_header_menu', array($this, 'display_app_header_menu') );
@@ -80,6 +95,11 @@
 			
 		}
 		
+		/**
+	     * Add Header Menu
+	     *
+	     * @return Void
+	     */
 		public function display_app_header_menu() {
 			
 			$this->render( 'header-menu', array_merge(Timber::get_context(), array(
@@ -88,6 +108,11 @@
 			
 		}
 		
+		/**
+	     * Removes Emojis from TinyMCE
+	     *
+	     * @return Array
+	     */
 		public function disable_emojis_tinymce( $plugins ) {
 	        
 	    	if ( is_array( $plugins ) ) {
@@ -102,6 +127,11 @@
 	    	
 	    }
 
+		/**
+	     * Removes Type tag from Script tags
+	     *
+	     * @return String
+	     */
 	    public function clean_script_tag($input) {
 	        
 	        $input = str_replace("type='text/javascript' ", '', $input);
@@ -110,6 +140,11 @@
 	        
 	    }
 		
+		/**
+	     * Renames theme title to a friendlier string
+	     *
+	     * @return String
+	     */
 		public function theme_name_wp_title( $title, $sep ) {
 		
 			if ( is_feed() ) {
@@ -138,6 +173,11 @@
 			
 		}
 		
+		/**
+	     * Cleans up shortcode <br> issue
+	     *
+	     * @return String
+	     */
 		public function fix_shortcodes($content) {
 			
 			$array = array (
@@ -151,6 +191,11 @@
 			
 		}
 		
+		/**
+	     * Reduces string down to a desired number of words
+	     *
+	     * @return String
+	     */
 		private function substr_words($text, $lim, $delim="&hellip;") { 
 			
 		    $len = strlen($text); 
@@ -169,6 +214,11 @@
 		    
 		}
 		
+		/**
+	     * Reduces excerpt down to a desired size
+	     *
+	     * @return String
+	     */
 		public function adjust_excerpt( $excerpt ) {
 			
 			global $length;
@@ -179,6 +229,11 @@
 		    
 		}
 		
+		/**
+	     * Removes ver parameter from static assets
+	     *
+	     * @return String
+	     */
 		public function remove_cssjs_ver( $src ) {
     
 		    if( strpos( $src, '?ver=' ) ) {
@@ -191,6 +246,11 @@
 		    
 		}
 		
+		/**
+	     * Deregisters wp-embed script
+	     *
+	     * @return Void
+	     */
 		public function deregister_scripts(){
     
 		    wp_deregister_script( 'wp-embed' );
