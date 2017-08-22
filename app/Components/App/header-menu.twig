@@ -1,8 +1,10 @@
 {# menu.twig #}
     	            
 <ul>
+
+    {# Loop through $menu->getItems, $menu is passed in from AppController::display_app_header_menu. #}
     
-   {% for item in menu.get_items %}
+    {% for item in menu.get_items %}
    
         <li class="{{item.classes | join(' ')}}">
             
