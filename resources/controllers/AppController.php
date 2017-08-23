@@ -30,12 +30,12 @@
 		
 		public function beforeFilter(Input $request) {
 			
-			add_action( 'app_header_menu', array($this, 'display_app_header_menu') );
+			add_action( 'app_header_menu', array($this, 'displayMenu') );
 			
 			parent::beforeFilter($request);
 		}
 		
-		public function display_app_header_menu() {
+		public function displayMenu() {
 			
 			echo view( 'app/header-menu', array(
 	           'items' => [
