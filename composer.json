@@ -1,20 +1,20 @@
 {
 	"name": "wp-kit/theme",
-    "description": "WP Kit theme",
+    "description": "The theme for wp-kit",
     "keywords": ["wpkit"],
     "license": "MIT",
     "require": {
-	    "tgmpa/tgm-plugin-activation": "2.5.0",
-        "wp-kit/core": "1.*"
+	    "wp-kit/foundation": "dev-master",
+        "wp-kit/invoker": "dev-master",
+        "wp-kit/shortcodes": "dev-master",
+		"filp/whoops": "^2.1",
+		"rcrowe/twigbridge": "^0.9.4",
+		"jjgrainger/posttypes": "^1.1"
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
-        },
-        "files": [
-	        "config/bootstrap.php",
-	        "app/routes.php"
-        ]
+            "Theme\\": "resources/"
+        }
     },
     "config": {
 		"preferred-install": "dist"
