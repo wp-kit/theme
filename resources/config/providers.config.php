@@ -11,5 +11,5 @@ return [
 	Theme\Providers\TwigServiceProvider::class,
 	WPKit\Shortcodes\ShortcodeServiceProvider::class,
     Theme\Providers\RouteServiceProvider::class,
-    Theme\Providers\RegistryServiceProvider::class,
+    WPKit\Registry\RegistryServiceProvider::class,
 ];
