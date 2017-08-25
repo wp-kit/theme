@@ -2,6 +2,8 @@
 
 namespace Theme\PostTypes;
 
-class TestPostType {
+use WPKit\Registry\PostType;
+
+class TestPostType extends PostType {
     
 }
