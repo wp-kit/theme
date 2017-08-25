@@ -7,9 +7,9 @@
 	    "wp-kit/foundation": "dev-master",
         "wp-kit/invoker": "dev-master",
         "wp-kit/shortcodes": "dev-master",
+	    "wp-kit/registry": "dev-master",
 		"filp/whoops": "^2.1",
-		"rcrowe/twigbridge": "^0.9.4",
-		"jjgrainger/posttypes": "^1.1"
+		"rcrowe/twigbridge": "^0.9.4"
     },
     "autoload": {
         "psr-4": {
