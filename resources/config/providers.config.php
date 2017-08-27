@@ -4,6 +4,7 @@
  */
 return [
 	Theme\Providers\ErrorServiceProvider::class,
+	Theme\Providers\EloquentServiceProvider::class,
 	WPKit\Invoker\InvokerServiceProvider::class,
 	Illuminate\View\ViewServiceProvider::class,
 	Illuminate\Events\EventServiceProvider::class,

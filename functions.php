@@ -26,6 +26,13 @@ app('config.finder')->addPaths([
 ]);
 
 /*
+ * Define constants
+ */
+foreach(app('config')->get('constants') as $constant => $value) {
+	! defined($constant) && define($constant, $value);
+}
+
+/*
  * Autoloading.
  */
 $loader = new \Composer\Autoload\ClassLoader();
