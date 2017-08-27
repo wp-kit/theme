@@ -1,7 +1,7 @@
 {
 	"name": "wp-kit/theme",
     "description": "The theme for wp-kit",
-    "keywords": ["wpkit"],
+    "keywords": ["wordpress", "wpkit", "rad", "rapid application development", "oop"],
     "license": "MIT",
     "require": {
 	    "wp-kit/foundation": "dev-master",
