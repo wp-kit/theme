@@ -4,10 +4,10 @@
     "keywords": ["wordpress", "wpkit", "rad", "rapid application development", "oop"],
     "license": "MIT",
     "require": {
-	    "wp-kit/foundation": "dev-master",
-        "wp-kit/invoker": "dev-master",
-        "wp-kit/shortcodes": "dev-master",
-	    "wp-kit/registry": "dev-master",
+	    "wp-kit/foundation": "2.*",
+        "wp-kit/invoker": "2.*",
+        "wp-kit/shortcodes": "2.*",
+	    "wp-kit/registry": "2.*",
 		"filp/whoops": "^2.1",
 		"rcrowe/twigbridge": "^0.9.4"
     },
@@ -15,9 +15,5 @@
         "psr-4": {
             "Theme\\": "resources/"
         }
-    },
-    "config": {
-		"preferred-install": "dist"
-	},
-	"minimum-stability": "dev"
+    }
 }
