@@ -9,7 +9,8 @@
         "wp-kit/shortcodes": "2.*",
 	    "wp-kit/registry": "2.*",
 		"filp/whoops": "^2.1",
-		"rcrowe/twigbridge": "^0.9.4"
+		"rcrowe/twigbridge": "^0.9.4",
+	    "illuminate/database": "5.*"
     },
     "autoload": {
         "psr-4": {
