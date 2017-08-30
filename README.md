@@ -2,7 +2,7 @@
 
 ```wp-kit``` is a micro [```RAD```](https://en.wikipedia.org/wiki/Rapid_application_development) (Rapid Application Development) solution for ```Wordpress```.
 
-[View the Docs](https://github.com/wp-kit/theme/docs)
+[View the Docs](https://github.com/wp-kit/theme/tree/docs)
 
 ## When should you use wp-kit/theme?
 
