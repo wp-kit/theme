@@ -1,4 +1,4 @@
-# wp-kit/theme
+# wp-kit/theme docs
 
 `wp-kit` has changed alot between versions 1.0 and 2.0. The documentation has two separate areas to deal with these differences. 
 
