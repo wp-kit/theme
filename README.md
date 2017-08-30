@@ -6,7 +6,7 @@
 
 `wp-kit 1.0` relies on [```wp-kit/core```](https://github.com/wp-kit/core) to provide all of the core features. These features have been broken down into README files:
 
-[Read Docs for V1](tree/docs/v1)
+[Read Docs for V1](v1/README.md)
 
 ## Version 2.0
 
@@ -14,4 +14,4 @@
 
 This major change in `wp-kit/theme:2.*` is to allow more flexibility in adding ServiceProviders to `wp-kit/theme` and results in an unavoidable overhaul that deems `wp-kit/core` redundant.
 
-[Read Docs for V2](tree/docs/v2)
+[Read Docs for V2](v2/README.md)
