@@ -8,7 +8,7 @@
 
 If you are looking for an ```RAD``` for Wordpress you may have come across [```Themosis Framework```](http://framework.themosis.com/) and [```Assely```](https://assely.org/).
 
-```wp-kit/theme``` is very much like these frameworks but has limited features; the benefit of using ```wp-kit/theme``` instead of [```themosis/theme```](https://github.com/themosis/themosis) and [```assely/assely```](https://github.com/assely/assely) is that you do not need to install their respective plugin frameworks.
+```wp-kit/theme``` is very much like these frameworks but has limited features; the benefit of using ```wp-kit/theme``` instead of [```themosis/theme```](https://github.com/themosis/themosis) and [```assely/assely```](https://github.com/assely/assely) is that you do not need to install any respective plugin framework as all the work in done in the theme and imported via ```Composer```.
 
 You should use ```Themosis``` or ```Assely``` is you require any handling of following:
 
@@ -18,7 +18,7 @@ You should use ```Themosis``` or ```Assely``` is you require any handling of fol
 * Metaboxes
 * Custom Fields
 
-If you do not need these features then ```wp-kit/theme``` could be for you comes packaged with several ```Themosis``` and ```Assely``` features such as:
+If you do not need these features then ```wp-kit/theme``` could be for you as it comes packaged with several ```Themosis``` and ```Assely``` features such as:
 
 * ServiceProvider Config
 * PostType Registration
