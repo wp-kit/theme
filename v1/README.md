@@ -20,6 +20,7 @@ Please choose from the followings documentations:
 ## Integrations
 
 * [ACF Integration](ACF.MD)
-* [Visual Composer Integration](VC.MD)
 * [Gravity Forms Integration](GForms.MD)
+* [TGMPA Integration](TGMPA.MD)
 * [Timber Integration](Timber.MD)
+* [Visual Composer Integration](VC.MD)
