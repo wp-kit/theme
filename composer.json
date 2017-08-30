@@ -11,10 +11,5 @@
 		"filp/whoops": "^2.1",
 		"rcrowe/twigbridge": "^0.9.4",
 	    "illuminate/database": "5.*"
-    },
-    "autoload": {
-        "psr-4": {
-            "Theme\\": "resources/"
-        }
     }
 }
