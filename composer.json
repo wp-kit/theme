@@ -3,6 +3,9 @@
     "description": "The theme for wp-kit",
     "keywords": ["wordpress", "wpkit", "rad", "rapid application development", "oop"],
     "license": "MIT",
+	"config": {
+		"preferred-install": "dist"
+	},
     "require": {
 	    "wp-kit/foundation": "2.*",
         "wp-kit/invoker": "2.*",
