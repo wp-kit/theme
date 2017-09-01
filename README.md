@@ -2,22 +2,6 @@
 
 ```wp-kit``` is a micro [```RAD```](https://en.wikipedia.org/wiki/Rapid_application_development) (Rapid Application Development) solution for ```Wordpress```.
 
-## Get Involved
-
-To learn more about how to use ```wp-kit``` check out the docs:
-
-[View the Docs](https://github.com/wp-kit/theme/tree/docs/README.md)
-
-Any help is appreciated. The project is open-source and we encourage you to participate. You can contribute to the project in multiple ways by:
-
-- Reporting a bug issue
-- Suggesting features
-- Sending a pull request with code fix or feature
-- Following the project on [GitHub](https://github.com/wp-kit)
-- Sharing the project around your community
-
-For details about contributing to the framework, please check the [contribution guide](https://github.com/wp-kit/theme/tree/docs/Contributing.md).
-
 ## When should you use wp-kit/theme?
 
 If you are looking for an ```RAD``` for Wordpress you may have come across [```Themosis Framework```](http://framework.themosis.com/) and [```Assely```](https://assely.org/).
@@ -45,6 +29,22 @@ If you do not need these features then ```wp-kit/theme``` could be for you as it
 * Shortcode Registration
 * Shortcode View Handling
 * Twig (not in Assely)
+
+## Get Involved
+
+To learn more about how to use ```wp-kit``` check out the docs:
+
+[View the Docs](https://github.com/wp-kit/theme/tree/docs/README.md)
+
+Any help is appreciated. The project is open-source and we encourage you to participate. You can contribute to the project in multiple ways by:
+
+- Reporting a bug issue
+- Suggesting features
+- Sending a pull request with code fix or feature
+- Following the project on [GitHub](https://github.com/wp-kit)
+- Sharing the project around your community
+
+For details about contributing to the framework, please check the [contribution guide](https://github.com/wp-kit/theme/tree/docs/Contributing.md).
 
 ## Requirements
 
