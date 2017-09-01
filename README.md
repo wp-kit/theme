@@ -45,7 +45,7 @@ Composer
 Download [Composer](https://getcomposer.org/download/) and install using this command
 
  ```php
- composer create-project wp-kit/theme
+ composer create-project wp-kit/theme 2.*
  ```
 
 ## Security Vulnerabilities
