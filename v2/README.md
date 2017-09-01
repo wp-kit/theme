@@ -26,6 +26,8 @@ To use a components simply follow to installation instructions for each componen
 
 ## Integrations
 
+Integrations do not come as default with ```wp-kit/theme```, you should follow the installation instructions for each integration you want to use. Each integration comes with a ```ServiceProvider``` that you should include in your ```providers.config.php```.
+
 * [ACF Integration](https://github.com/wp-kit/acf-integration/blob/master/README.md)
 * [TGMPA Integration](https://github.com/wp-kit/tgmpa-integration/blob/master/README.md)
 * [Visual Composer Integration](https://github.com/wp-kit/vc-integration/blob/master/README.md)
