@@ -3,17 +3,14 @@ language: php
 php:
   - 5.6
   - 7.0
-  - 7.1  
- 
-env:
-  - DB=mysql
+  - 7.1 
   
 before_script:
   - curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
   - chmod +x wp-cli.phar
   - sudo mv wp-cli.phar /usr/local/bin/wp
   - wp core download
-  - wp core config --dbhost=wordpress.local --dbname=wordpress --dbuser=root --dbpass=root
+  - wp core config --dbhost=localhost --dbname=wordpress --dbuser=root --dbpass=root
   
 script:
   - cd wp-content/themes
