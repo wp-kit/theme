@@ -2,6 +2,14 @@
 
 ```wp-kit``` is a micro [```RAD```](https://en.wikipedia.org/wiki/Rapid_application_development) (Rapid Application Development) solution for ```Wordpress```.
 
+## Installation
+
+Download [Composer](https://getcomposer.org/download/) and install using this command
+
+ ```php
+ composer create-project wp-kit/theme=2.0.0 theme --prefer-dist
+ ```
+
 ## When should you use wp-kit/theme?
 
 If you are looking for an ```RAD``` for Wordpress you may have come across [```Themosis Framework```](http://framework.themosis.com/) and [```Assely```](https://assely.org/).
@@ -53,14 +61,6 @@ Wordpress 4+
 PHP 5.6+
 
 Composer
-
-## Installation
-
-Download [Composer](https://getcomposer.org/download/) and install using this command
-
- ```php
- composer create-project wp-kit/theme=2.0.0 theme --prefer-dist
- ```
 
 ## Security Vulnerabilities
 
