@@ -45,10 +45,6 @@ before_script:
     - sed -i "s/yourpasswordhere//" wp-tests-config.php
     # Create WordPress database.
     - mysql -e 'CREATE DATABASE wordpress_test;' -uroot
-    # Download WP CLI
-    - curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-    - chmod +x wp-cli.phar
-    - sudo mv wp-cli.phar /usr/local/bin/wp
     # Hop into themes directory.
     - cd $theme_dir
 
@@ -59,5 +55,7 @@ script:
     # Search theme for PHP syntax errors.
     - find . \( -name '*.php' \) -exec php -lf {} \;
     - composer update --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
-    - wp kit vendor:publish
+    - curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+    - chmod +x wp-cli.phar
+    - wp-cli.phar kit vendor:publish
     - ./vendor/phpunit/phpunit/phpunit -v --coverage-text --colors=never --stderr
