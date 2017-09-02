@@ -14,5 +14,9 @@
 		"filp/whoops": "^2.1",
 		"rcrowe/twigbridge": "^0.9.4",
 	    "illuminate/database": "5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0",
+        "wp-kit/testing": "2.*"
     }
 }
