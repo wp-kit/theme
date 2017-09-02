@@ -45,6 +45,10 @@ before_script:
     - sed -i "s/yourpasswordhere//" wp-tests-config.php
     # Create WordPress database.
     - mysql -e 'CREATE DATABASE wordpress_test;' -uroot
+    # Download WP CLI
+    - curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+    - chmod +x wp-cli.phar
+    - sudo mv wp-cli.phar /usr/local/bin/wp
     # Hop into themes directory.
     - cd $theme_dir
 
