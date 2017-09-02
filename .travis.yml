@@ -5,6 +5,9 @@ php:
   - 7.0
   - 7.1 
   
+env:
+  - DB=mysql
+  
 before_script:
   - curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
   - chmod +x wp-cli.phar
