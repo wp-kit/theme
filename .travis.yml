@@ -57,5 +57,5 @@ script:
     - composer update --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
     - wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
     - chmod +x wp-cli.phar
-    - wp-cli.phar kit vendor:publish
+    - php wp-cli.phar kit vendor:publish
     - ./vendor/phpunit/phpunit/phpunit -v --coverage-text --colors=never --stderr
