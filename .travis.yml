@@ -55,7 +55,7 @@ script:
     # Search theme for PHP syntax errors.
     - find . \( -name '*.php' \) -exec php -lf {} \;
     - composer update --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
-    - curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+    - wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
     - chmod +x wp-cli.phar
     - wp-cli.phar kit vendor:publish
     - ./vendor/phpunit/phpunit/phpunit -v --coverage-text --colors=never --stderr
