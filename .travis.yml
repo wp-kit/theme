@@ -11,11 +11,6 @@ php:
     - "7.0"
     - "5.6"
 
-# Ditch sudo and use containers.
-# @link http://docs.travis-ci.com/user/migrating-from-legacy/#Why-migrate-to-container-based-infrastructure%3F
-# @link http://docs.travis-ci.com/user/workers/container-based-infrastructure/#Routing-your-build-to-container-based-infrastructure
-sudo: false
-
 # Declare which versions of WordPress to test against.
 # Also declare whether or not to test in Multisite.
 env:
@@ -45,6 +40,10 @@ before_script:
     - sed -i "s/yourpasswordhere//" wp-tests-config.php
     # Create WordPress database.
     - mysql -e 'CREATE DATABASE wordpress_test;' -uroot
+    # GET WP CLI
+    - wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+    - chmod +x wp-cli.phar
+    - sudo mv wp-cli.phar /usr/local/bin/wp
     # Hop into themes directory.
     - cd $theme_dir
 
@@ -55,7 +54,5 @@ script:
     # Search theme for PHP syntax errors.
     - find . \( -name '*.php' \) -exec php -lf {} \;
     - composer update --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
-    - wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-    - chmod +x wp-cli.phar
-    - php wp-cli.phar kit vendor:publish
+    - wp kit vendor:publish
     - ./vendor/phpunit/phpunit/phpunit -v --coverage-text --colors=never --stderr
