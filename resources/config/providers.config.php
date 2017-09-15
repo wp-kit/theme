@@ -11,6 +11,6 @@ return [
 	Illuminate\Filesystem\FilesystemServiceProvider::class,
 	Theme\Providers\TwigServiceProvider::class,
 	WPKit\Shortcodes\ShortcodeServiceProvider::class,
-    Theme\Providers\RouteServiceProvider::class,
+    Theme\Providers\HttpServiceProvider::class,
     WPKit\Registry\RegistryServiceProvider::class,
 ];

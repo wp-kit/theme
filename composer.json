@@ -3,17 +3,19 @@
     "description": "The theme for wp-kit",
     "keywords": ["wordpress", "wpkit", "rad", "rapid application development", "oop"],
     "license": "MIT",
+	"config": {
+		"preferred-install": "dist"
+	},
     "require": {
 	    "wp-kit/foundation": "2.*",
         "wp-kit/invoker": "2.*",
         "wp-kit/shortcodes": "2.*",
 	    "wp-kit/registry": "2.*",
 		"filp/whoops": "^2.1",
-		"rcrowe/twigbridge": "^0.9.4"
+		"rcrowe/twigbridge": "^0.9.4",
+	    "illuminate/database": "5.*"
     },
-    "autoload": {
-        "psr-4": {
-            "Theme\\": "resources/"
-        }
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
     }
 }
