@@ -54,5 +54,11 @@ script:
     # Search theme for PHP syntax errors.
     - find . \( -name '*.php' \) -exec php -lf {} \;
     - composer update --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
+    # Additional non-compulsory packages
+    - composer require "wp-kit/tgmpa-integration"
+    - composer require "wp-kit/vc-integration"
+    - composer require "wp-kit/acf-integration"
+    - composer require "wp-kit/magic-meta"
+    - composer require "wp-kit/flash"
     - wp kit vendor:publish
     - ./vendor/phpunit/phpunit/phpunit -v --coverage-text --colors=never --stderr
