@@ -31,6 +31,8 @@ before_script:
     - chmod +x wp-cli.phar
     - sudo mv wp-cli.phar /usr/local/bin/wp
     - wp core download
+    - mysql -e 'CREATE DATABASE wordpress_test;' -uroot
+    - wp config create --dbname=wordpress_test --dbuser=root
     - wp core install --url="http://localhost"  --title="Your Blog Title" --admin_user="admin" --admin_password="admin" --admin_email="admin@admin.com"
     - theme_slug=$(basename $(pwd))
     - theme_dir=$WP_DEVELOP_DIR/wp-content/themes/$theme_slug
