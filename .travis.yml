@@ -30,6 +30,7 @@ before_script:
     - wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
     - chmod +x wp-cli.phar
     - sudo mv wp-cli.phar /usr/local/bin/wp
+    - wp core download
     - wp core install --url="http://localhost"  --title="Your Blog Title" --admin_user="admin" --admin_password="admin" --admin_email="admin@admin.com"
     - theme_slug=$(basename $(pwd))
     - theme_dir=$WP_DEVELOP_DIR/wp-content/themes/$theme_slug
