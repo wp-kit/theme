@@ -36,6 +36,7 @@ before_script:
     - mysql -e 'CREATE DATABASE wordpress_test;' -uroot
     - wp config create --dbname=wordpress_test --dbuser=root
     - wp core install --url="http://localhost"  --title="Your Blog Title" --admin_user="admin" --admin_password="admin" --admin_email="admin@admin.com"
+    - cd ..
     - mv $theme_slug $theme_dir
     # Hop into themes directory.
     - cd $theme_dir
