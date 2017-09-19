@@ -25,8 +25,7 @@ before_script:
     # Set up WordPress installation.
     - export WP_DEVELOP_DIR=/tmp/wordpress/
     - mkdir -p $WP_DEVELOP_DIR
-    - theme_slug=$(basename $(pwd))
-    - theme_dir=$WP_DEVELOP_DIR/wp-content/themes/$theme_slug
+    - themes_dir=$WP_DEVELOP_DIR/wp-content/themes
     - cd $WP_DEVELOP_DIR
     # GET WP CLI
     - wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
@@ -36,10 +35,10 @@ before_script:
     - mysql -e 'CREATE DATABASE wordpress_test;' -uroot
     - wp config create --dbname=wordpress_test --dbuser=root
     - wp core install --url="http://localhost"  --title="Your Blog Title" --admin_user="admin" --admin_password="admin" --admin_email="admin@admin.com"
-    - cd ..
-    - mv $theme_slug $theme_dir
+    - cd $themes_dir
+    - composer create-project wp-kit/theme=2.0.0 theme --prefer-dist
     # Hop into themes directory.
-    - cd $theme_dir
+    - cd theme
 
 # Run test script commands.
 # Default is specific to project language.
