@@ -48,7 +48,7 @@ script:
     - find . \( -name '*.php' \) -exec php -lf {} \;
     - composer update --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
     # Additional non-compulsory packages
-    - composer require wp-kit/tgmpa-integration wp-kit/vc-integration wp-kit/acf-integration wp-kit/magic-meta wp-kit/flash
+    - composer require wp-kit/tgmpa-integration wp-kit/vc-integration wp-kit/acf-integration wp-kit/cleanoquent wp-kit/flash
     - sed -i '16iWPKit\Integrations\Tgmpa\TgmpaServiceProvider::class, WPKit\Integrations\Vc\VisualComposerServiceProvider::class, WPKit\Integrations\Acf\AcfServiceProvider::class, Illuminate\Filesystem\FilesystemServiceProvider::class, Illuminate\Session\SessionServiceProvider::class, WPKit\Flash\FlashServiceProvider::class,' resources/config/providers.config.php
     - wp kit vendor:publish
     - ./vendor/phpunit/phpunit/phpunit -v --coverage-text --colors=never --stderr
