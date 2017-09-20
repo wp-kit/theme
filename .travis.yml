@@ -36,7 +36,7 @@ before_script:
     - wp config create --dbname=wordpress_test --dbuser=root
     - wp core install --url="http://localhost"  --title="Your Blog Title" --admin_user="admin" --admin_password="admin" --admin_email="admin@admin.com"
     - cd $themes_dir
-    - composer create-project wp-kit/theme=2.0.0 theme --prefer-dist
+    - composer create-project wp-kit/theme
     # Hop into themes directory.
     - cd theme
 
