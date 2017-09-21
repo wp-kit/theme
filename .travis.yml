@@ -5,9 +5,15 @@
 # @link http://about.travis-ci.org/docs/user/languages/php/
 language: php
 
+# Only build master branch.
 branches:
     only:
         - master
+        
+# Only send fail notifications
+notifications:
+  email:
+    on_success: never # default: change
 
 # Declare versions of PHP to use. Use one decimal max.
 php:
