@@ -13,6 +13,7 @@ return [
     'Theme\\PostTypes\\' => resources_path('postTypes'),
     'Theme\\Shortcodes\\' => resources_path('shortcodes'),
     'Theme\\Taxonomies\\' => resources_path('taxonomies'),
-    'Theme\\Tests\\' => resources_path('tests')
+    'Theme\\Tests\\' => resources_path('tests'),
+    'Theme\\Widgets\\' => resources_path('widgets')
 
 ];
