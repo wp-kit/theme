@@ -1,5 +1,7 @@
 # wp-kit/theme
 
+<img src="https://travis-ci.org/wp-kit/theme.svg?branch=master" />
+
 ```wp-kit``` is a micro [```RAD```](https://en.wikipedia.org/wiki/Rapid_application_development) (Rapid Application Development) solution for ```Wordpress```.
 
 ## Installation
