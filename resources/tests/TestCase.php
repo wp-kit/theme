@@ -17,7 +17,7 @@ abstract class TestCase extends PHPUnit_Framework_TestCase
 	protected function setUp() {
 	
 		// Load the basics part of WordPress.
-		require_once '../../../../wp-config.php';
+		require_once '../../../../../wp-config.php';
 		
 	}
 
