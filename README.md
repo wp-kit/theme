@@ -17,3 +17,4 @@ This major change in `wp-kit/theme:2.*` is to allow more flexibility in adding S
 These documentaton for these features have been broken down into links to individual component repository README files:
 
 [Read Docs for V2](v2/README.md)
+
