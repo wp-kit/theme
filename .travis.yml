@@ -26,6 +26,7 @@ before_script:
     - export WP_DEVELOP_DIR=/tmp/wordpress/
     - mkdir -p $WP_DEVELOP_DIR
     - themes_dir=$WP_DEVELOP_DIR/wp-content/themes
+    - theme_path=$(pwd)
     - cd $WP_DEVELOP_DIR
     # GET WP CLI
     - wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
@@ -36,9 +37,10 @@ before_script:
     - wp config create --dbname=wordpress_test --dbuser=root
     - wp core install --url="http://localhost"  --title="Your Blog Title" --admin_user="admin" --admin_password="admin" --admin_email="admin@admin.com"
     - cd $themes_dir
-    - mv ~/wp-kit/theme theme
+    - mv $theme_path theme
     # Hop into themes directory.
     - cd theme
+    - wp theme activate theme
 
 # Run test script commands.
 # Default is specific to project language.
@@ -50,6 +52,5 @@ script:
     # Additional non-compulsory packages
     - composer require wp-kit/tgmpa-integration wp-kit/vc-integration wp-kit/acf-integration wp-kit/cleanoquent wp-kit/flash
     - sed -i '16iWPKit\\Integrations\\Tgmpa\\TgmpaServiceProvider::class, WPKit\\Integrations\\Vc\\VisualComposerServiceProvider::class, WPKit\\Integrations\\Acf\\AcfServiceProvider::class, Illuminate\\Filesystem\\FilesystemServiceProvider::class, Illuminate\\Session\\SessionServiceProvider::class, WPKit\\Flash\\FlashServiceProvider::class,' resources/config/providers.config.php
-    - wp theme activate theme
     - wp kit vendor:publish
     - phpunit
