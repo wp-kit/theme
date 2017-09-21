@@ -71,3 +71,5 @@ If you discover a security vulnerability within WP Kit, please send an e-mail to
 ## License
 
 wp-kit/theme is open-sourced software licensed under the MIT License.
+
+
