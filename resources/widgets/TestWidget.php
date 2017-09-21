@@ -1,6 +1,6 @@
 <?php
     
-    namespace App\Widgets;
+    namespace Theme\Widgets;
     
     use WC_Widget;
     
