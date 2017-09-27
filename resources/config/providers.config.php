@@ -6,6 +6,8 @@ return [
 	Theme\Providers\ErrorServiceProvider::class,
 	Theme\Providers\EloquentServiceProvider::class,
 	Theme\Providers\FunctionsServiceProvider::class,
+	Theme\Providers\SupportServiceProvider::class,
+	Theme\Providers\WidgetServiceProvider::class,
 	WPKit\Invoker\InvokerServiceProvider::class,
 	Illuminate\View\ViewServiceProvider::class,
 	Illuminate\Events\EventServiceProvider::class,
