@@ -2,9 +2,9 @@
     
     namespace Theme\Widgets;
     
-    use WC_Widget;
+    use WP_Widget;
     
-    class TestWidget extends WC_Widget {
+    class TestWidget extends WP_Widget {
         
         public function __construct() {
     		$this->widget_cssclass    = 'test_widget';
