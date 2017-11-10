@@ -2,6 +2,8 @@
 
 Welcome to filestructure guide for wp-kit/theme 2.0.
 
+## Structure
+
 The filestructure is very much influenced by [Themosis` filestructure](https://framework.themosis.com/docs/1.3/theme/#structure) where the resources folder holds the core components.
 
 ```php
