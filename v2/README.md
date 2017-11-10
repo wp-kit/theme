@@ -3,7 +3,7 @@
 Please choose from the followings documentations:
 
 * [Authentication](https://github.com/wp-kit/auth/blob/master/README.md#usage)
-* [Config](https://github.com/wp-kit/config/blog/master/README.md#usage)
+* [Config](https://github.com/wp-kit/config/blob/master/README.md#usage)
 * [Flash Notifications](https://github.com/wp-kit/flash/blob/master/README.md#usage)
 * [Filestructure](Filestructure.MD)
 * [Invoker](https://github.com/wp-kit/invoker/blob/master/README.md#usage)
