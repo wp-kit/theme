@@ -52,6 +52,7 @@ class UserController extends Controller
         return view('user.profile', ['user' => $user]);
     }
 }
+```
 
 ## Bindings
 
