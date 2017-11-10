@@ -1,4 +1,4 @@
-# wp-kit
+# wp-kit/theme 2.0
 
 Welcome to the PRS-4 guide for wp-kit. The PRS-4 structure in wp-kit is based on [Themosis Namespacing and Autoloading](https://framework.themosis.com/docs/1.3/theme/#namespace-management-and-autoloading).
 
