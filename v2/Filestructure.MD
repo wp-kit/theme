@@ -1,4 +1,4 @@
-# wp-kit
+# wp-kit/theme 2.0
 
 Welcome to the guide on filestructure in wp-kit.
 
