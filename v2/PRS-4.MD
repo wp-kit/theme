@@ -10,8 +10,12 @@ Here is the default configuration:
 
 ```php
 return [
-    'Theme\\Controllers\\' => themosis_path('theme.resources').'controllers',
-    'Theme\\Models\\' => themosis_path('theme.resources').'models',
-    'Theme\\Providers\\' => themosis_path('theme.resources').'providers'
+    'Theme\\Controllers\\' => resources_path('controllers'),
+    'Theme\\Providers\\' => resources_path('providers'),
+    'Theme\\PostTypes\\' => resources_path('postTypes'),
+    'Theme\\Shortcodes\\' => resources_path('shortcodes'),
+    'Theme\\Taxonomies\\' => resources_path('taxonomies'),
+    'Theme\\Tests\\' => resources_path('tests'),
+    'Theme\\Widgets\\' => resources_path('widgets')
 ];
 ```
