@@ -30,7 +30,19 @@ auth('token', array(
 	'allow' => array(
 	  '/tips',
 	  '/tip/*'
-	)
+	),
+	'limit' => 5,
+	'issuer' => function( $token, \WP_User $user ) {
+	
+		return array(
+			'access_token' => $token,
+			'expires_in' => 3600,
+			'token_type' => 'Bearer',
+			'scope' => 'basic',
+			'refresh_token' => null
+		);
+	
+	}
 ));
 ```
 
