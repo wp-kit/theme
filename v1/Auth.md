@@ -50,7 +50,7 @@ auth('token', array(
 
 ### Form Authentication
 
-Form auth allows you to only let logged in users into your application and access the dissallowed routes and pages. Make sure you set your form action as the `wp_login_url()`, the form auth component deals with the rest.
+Form auth allows you to only let logged in users into your application and access the dissallowed routes and pages via a custom form. Make sure you set your form action as the `wp_login_url()`, the form auth component deals with the rest.
 
 ```php
 auth('form', array(
