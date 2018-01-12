@@ -13,6 +13,8 @@ There is an auth helper function that can be used anywhere in your application, 
 
 ### Basic Authentication
 
+Basic auth only autnaticates with the users `user_login` column at the moment, it works out of the box and does not require any further configuration.
+
 ```php
 auth('basic');
 ```
