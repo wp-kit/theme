@@ -23,6 +23,13 @@ auth('basic');
 
 Token authentication is best when your application is serving another web / mobile application. You exchange the users credentials for a token which can be used as a Bearer token in later requests.
 
+```js
+$.post(apiUrl + '/oauth/token', {
+	username: 'youremail@yourcompany.com',
+	password: 'supersecurepassword'
+});
+```
+
 ```php
 auth('token', array(
 	'username' => array(
