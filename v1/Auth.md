@@ -4,7 +4,7 @@ WPKit 1.0 comes with three types of Auth:
 
 * Basic Authentication (Illuminate): [auth.basic]
 * Token Authentication: [auth.token]
-* Form Authentication: [auth.form]
+* Form Authentication (WP): [auth.form]
 
 
 ## Usage
@@ -18,6 +18,8 @@ auth('basic');
 ```
 
 ### Token Authentication
+
+Token authentication is best when your application is serving another web / mobile application. You exchange the users credentials for a token which can be used as a Bearer token in later requests.
 
 ```php
 auth('token', array(
@@ -34,15 +36,20 @@ auth('token', array(
 
 ### Form Authentication
 
+Form auth allows you to only let logged in users into your application and access the dissallowed routes and pages. Make sure you set your form action as the `wp_login_url()`, the form auth component deals with the rest.
+
 ```php
 auth('form', array(
-	'username' => array(
-	  'login',
-	  'email'
-	),
+	'mask_wp_login' => true,
 	'allow' => array(
 	  '/tips',
 	  '/tip/*'
-	)
+	),
+	'disallow' => array(
+	  '/account',
+	  '/account/*'
+	),
+	'login_redirect' => '/dashboard',
+	'logout_redirect' => '/login'
 ));
 ```
