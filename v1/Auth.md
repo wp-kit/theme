@@ -16,6 +16,8 @@ There is an auth helper function that can be used anywhere in your application, 
 Basic auth only autnaticates with the users `user_login` column at the moment, it works out of the box and does not require any further configuration.
 
 ```php
+// app/routes.php
+
 auth('basic');
 ```
 
@@ -31,6 +33,8 @@ $.post(apiUrl + '/oauth/token', {
 ```
 
 ```php
+// app/routes.php
+
 auth('token', array(
 	'username' => array(
 	  'login',
@@ -60,6 +64,8 @@ auth('token', array(
 Form auth allows you to only let logged in users into your application and access the dissallowed routes and pages via a custom form. Make sure you set your form action as the `wp_login_url()`, the form auth component deals with the rest.
 
 ```php
+// app/routes.php
+
 auth('form', array(
 	'mask_wp_login' => true,
 	'allow' => array(
