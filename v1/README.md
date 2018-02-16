@@ -9,7 +9,6 @@ Please choose from the followings documentations:
 * [Flash Notifications](Flash.md)
 * [Functions](Functions.md)
 * [Helpers](Helpers.md)
-* [Invoker](Invoker.md)
 * [PRS-4 Autoinclude](PRS-4.md)
 * [Rest API](RestApi.md)
 * [Registering Post Types](PostTypes.md)
