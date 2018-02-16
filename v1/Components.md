@@ -39,7 +39,7 @@ wp_send_json('html');
 
 Controllers come with a `::render` helper method that wraps `get_component`.
 
-The first argument required by `get_component` for the `$folder` is taken from the Controller classname using regex.
+Unlike the Template helpers, the Controller helper accepts only two arguments. This is because the first argument required by `get_component` for the `$folder` is taken from the Controller classname using regex. For example, `PostsController` would translate to `Posts` being passed as the first argumrnt into `get_component`.
 
 ```php
 namespace App\Classes;
