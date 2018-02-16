@@ -19,44 +19,44 @@ use WPKit\Invoker\Controller;
 class FrontPageController extends Controller {
 	
 	var $scripts = [
-    	'scripts/vendor/modernizr.min.js',
-    	'scripts/vendor/foundation.min.js',
-    	'scripts/vendor/autocomplete.min.js',
-    	'app' => [
-    	    'file' => 'scripts/app.min.js'
-        ],
-    	'scripts/framework/foundation.min.css',
-    	'styles/style.css',
+		'scripts/vendor/modernizr.min.js',
+		'scripts/vendor/foundation.min.js',
+		'scripts/vendor/autocomplete.min.js',
+		'app' => [
+		    'file' => 'scripts/app.min.js'
+		],
+		'scripts/framework/foundation.min.css',
+		'styles/style.css',
 	];
 	
 	public function getScripts() {
-    	
-    	wp_deregister_script('jquery-serialize-object');
-    	
-    	$this->scripts['app']['localize'] = [
-            'name' => 'myAjax',
-            'data' => [ 
-                'ajax_url' => admin_url( 'admin-ajax.php' )
-            ]
-        ];
-        
-        return parent::getScripts();
+	
+		wp_deregister_script('jquery-serialize-object');
 		
+		$this->scripts['app']['localize'] = [
+		    'name' => 'myAjax',
+		    'data' => [ 
+		        'ajax_url' => admin_url( 'admin-ajax.php' )
+		    ]
+		];
+		
+		return parent::getScripts();
+	
 	}
-  
+	
 	public function beforeFilter() {
-				
+			
 		add_action( 'wp_head', array( $this, 'helloWorld' ), 10, 2 );
 		
 		parent::beforeFilter();
-		
+	
 	}
-  
-  public function helloWorld() {
-  
-    echo 'hello world!';
-    
-  }
+	
+	public function helloWorld() {
+	
+		echo 'hello world!';
+	
+	}
 	
 }
 
