@@ -29,7 +29,7 @@ $html = get_component('Post', 'block', array('post' => $post));
 wp_send_json('html');
 ```
 
-```php
+```html
 <div class="post">
   <?php the_component('Post', 'block', array('post' => $post)); ?>
 <div>
