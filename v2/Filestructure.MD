@@ -14,6 +14,7 @@ The filestructure is very much influenced by [Themosis` filestructure](https://f
 |   +-- models/
 |   +-- providers/
 |   +-- views/
+|   +-- tests/
 |   +-- widgets/
 |   +-- routes.php
 +-- functions.php
