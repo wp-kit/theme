@@ -77,17 +77,7 @@ class FrontPageController extends Controller {
 
 invoke( 'AppController' );
 
-invoke( 'FromtPageController', 'template_redirect', 'is_front_page' );
-
-invoke( function() {
-
-	add_filter( 'pre_get_posts', function($query) {
-		
-		$query->posts_per_page = 10;
-		
-	});
-
-}, 'wp', 'is_front_page', 80 );
+invoke( 'FrontPageController', 'template_redirect', 'is_front_page' );
 
 invoke( 'ShopController', 'wp', function() {
 
