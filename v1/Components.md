@@ -67,4 +67,6 @@ class PostsController extends Controller {
 
 The above is the equivalent of the below:
 
-`the_component('Posts', 'message', array('post' => get_post(1)));`
+```php
+the_component('Posts', 'message', array('post' => get_post(1)));
+```
