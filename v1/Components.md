@@ -1,7 +1,7 @@
 
-# components
+# Components
 
-In wpkit, components are view files that can be called within a Template or a Controller.
+In wpkit, Components are view files that can be called within a Template or a Controller.
 
 You are able to use Twig (as provided by Timber), and plain vanilla PhP files for views.
 
