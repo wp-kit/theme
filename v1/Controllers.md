@@ -1,6 +1,6 @@
 # Controllers
 
-In WPKit 1.0, Controllers are a way for you to organise your code. Controllers must be invoked using the invoke helper.
+In WPKit 1.0, Controllers are a way for you to organise your code. Controllers must be invoked using the [invoke](#invoking) helper.
 
 Often, WordPress developers want to group their [actions and filters](https://codex.wordpress.org/Plugin_API) in a more defined context but do not want to use a traditional controller and would rather invoke a controller based on a condition rather than a path. Controllers also allow you to define scripts that should be used within templates wherever the Controller is invoked.
 
@@ -13,7 +13,7 @@ Lastly, as expected a Controller is invoked once, and once only during the lifec
 WPKit 1.0 comes shipped with a Controller that you can extend too to enable you to benefit from the enqueue scripts feature which helps to reduce the amount of code you need to write to output scripts and styles through ```wp_enqueue_scripts```.
 
 ```php
-
+// app/Controllers/FrontPageController.php
 namespace App\Controllers;
 
 use WPKit\Invoker\Controller;
@@ -66,8 +66,7 @@ class FrontPageController extends Controller {
 ### Invoking
 
 ```php
-
-// as php function as below
+// app/routes.php
 
 // $callback 	( string / array / callable )
 // $hook 		( string )
