@@ -13,7 +13,14 @@ To call a component with a template, you can use the `get_component` and `the_co
 
 Both functions accepts three arguments:
 
-`get_component(string $folder, string $file, array $args)`
+```php
+/*
+ * string $folder (the folder name where the view file is situated within the Components folder
+ * string $file (the view file without any extension)
+ * array $argse (an array of arguments to pass into the view
+ */
+function get_component($folder, $file, $args = array()) {}
+```
 
 When using `get_component`, the view is returned rather, but when using `the_component` the response is echoed:
 
