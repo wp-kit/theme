@@ -12,6 +12,7 @@ Please choose from the followings documentations:
 * [Shortcodes](https://github.com/wp-kit/shortcodes/blob/master/README.md#usage)
 * [Views / Twig](Twig.MD)
 * [Utilities](https://github.com/wp-kit/utils/blob/master/README.md#usage)
+* [Unit Testing](https://github.com/wp-kit/theme/blob/master/README.md#unit-testing)
 
 ## Advanced
 
