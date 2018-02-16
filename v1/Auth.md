@@ -1,4 +1,4 @@
-# auth
+# Authentication
 
 WPKit 1.0 comes with three types of Auth:
 
