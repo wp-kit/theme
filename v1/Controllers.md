@@ -67,8 +67,6 @@ class FrontPageController extends Controller {
 
 ```php
 
-use WPKit\Invoker\Facades\Invoker;
-
 // as php function as below
 
 // $callback 	( string / array / callable )
@@ -79,7 +77,7 @@ use WPKit\Invoker\Facades\Invoker;
 
 invoke( 'AppController' );
 
-invoke( 'ProductController@someMethod' );
+invoke( 'FromtPageController', 'template_redirect', 'is_front_page' );
 
 invoke( function() {
 
@@ -90,10 +88,6 @@ invoke( function() {
 	});
 
 }, 'wp', 'is_front_page', 80 );
-
-invoke( 'App\Controllers\SingleProductController', 'wp', 'is_product' );
-
-invoke( \App\Controllers\CartController::class, 'wp', 'is_cart' );
 
 invoke( 'ShopController', 'wp', function() {
 
