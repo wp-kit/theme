@@ -65,6 +65,8 @@ class FrontPageController extends Controller {
 
 ### Invoking
 
+The invoker helper should be used to define when Controllers are invoked, usually a Controller is invoked on a specific hook, on a specific condition.
+
 ```php
 // app/routes.php
 
