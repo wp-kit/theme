@@ -1,3 +1,4 @@
 vendor/
 resources/storageframework
 .DS_Store
+*.lock
