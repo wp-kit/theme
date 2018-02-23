@@ -11,7 +11,7 @@
     		$this->widget_description = __( 'Test Widget', 'woocommerce' );
     		$this->widget_id          = $id_base;
     		$this->widget_name        = $name;
-    		parent::__construct();
+    		parent::__construct($id_base, $name);
     	}
     
         public function widget( $args, $instance ) {
