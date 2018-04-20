@@ -1,4 +1,4 @@
 vendor/
-resources/storageframework
+resources/storage/framework/
 .DS_Store
 *.lock
