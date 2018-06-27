@@ -9,7 +9,7 @@
 Download [Composer](https://getcomposer.org/download/) and install using this command
 
  ```php
- composer create-project wp-kit/theme=2.0.0 theme --prefer-dist
+composer create-project wp-kit/theme=2.* theme --prefer-dist
  ```
 
 ## When should you use wp-kit/theme?
