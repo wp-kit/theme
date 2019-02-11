@@ -3,6 +3,7 @@
 	namespace Theme\Providers;
 	
 	use TwigBridge\ServiceProvider;
+	use Timber\Twig;
 	
 	class TwigServiceProvider extends ServiceProvider {
 		
@@ -23,6 +24,17 @@
 	    public function boot()
 	    {
 	        $this->registerExtension();
+	        
+	        if( class_exists( Twig::class ) ) { 
+	        
+		        $twig = new Twig();
+		        
+		        $twig->add_timber_filters( $this->app['twig'] );
+		        $twig->add_timber_functions( $this->app['twig'] );
+		        $twig->add_timber_escapers( $this->app['twig'] );
+		        
+			}
+			
 	    }
 		
 	}
