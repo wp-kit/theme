@@ -11,7 +11,7 @@
 	     * @var array
 	     */
     	public $scripts = [
-        	'styles/style.css',
+        	'style.css',
     	];
     	
     	/**
