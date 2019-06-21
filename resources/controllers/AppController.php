@@ -55,7 +55,7 @@
 	     */
 		public function displayMenu() {
 			
-			echo view( 'app/header-menu', get_nav_menu_items_by_location('header-menu') );
+			echo view( 'app/header-menu', ['items' => get_nav_menu_items_by_location('header-menu')] );
             
 		}
 	
