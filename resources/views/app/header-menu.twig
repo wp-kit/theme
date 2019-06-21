@@ -1,19 +1,15 @@
 {# menu.twig #}
 
-{% if items %}
-    	            
-	<ul>
-	    
-	   {% for item in items %}
-	   
-	        <li class="{{item.classes | join(' ')}}">
-	            
-	            <a href="{{item.link}}">{{ item.label }}</a>
-	             
-	        </li>
-	        
-	    {% endfor %}
-	    
-	</ul>
-	
-{% endif %}
+<ul>
+        
+   {% for item in items %}
+   
+        <li class="{{item.classes | join(' ')}}">
+            
+            <a href="{{item.url}}">{{ item.title ?: item.post_title }}</a>
+             
+        </li>
+        
+    {% endfor %}
+    
+</ul>
