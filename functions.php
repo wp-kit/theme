@@ -1,14 +1,18 @@
 <?php
 
-// make sure composer has been installed
-if( ! file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+if( ! class_exists('WPKit\Foundation\Application') ) {
+
+	// make sure composer has been installed
+	if( ! file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+
+		wp_die('Composer has not been installed, try running composer', 'Dependancy Error');
+	}
+
+
+	// Use composer to load the autoloader.
+	require __DIR__ . '/vendor/autoload.php';
 	
-	wp_die('Composer has not been installed, try running composer', 'Dependancy Error');
 }
-
-
-// Use composer to load the autoloader.
-require __DIR__ . '/vendor/autoload.php';
 
 // if we don't have WPKit at this point we probably should die
 	    
