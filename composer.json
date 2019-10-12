@@ -1,5 +1,6 @@
 {
 	"name": "wp-kit/theme",
+	"type": "wordpress-theme",
     "description": "The theme for wp-kit",
     "keywords": ["wordpress", "wpkit", "rad", "rapid application development", "oop"],
     "license": "MIT",
