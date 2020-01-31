@@ -2,3 +2,7 @@ vendor/
 resources/storage/framework/
 .DS_Store
 *.lock
+build
+node_modules
+manifest.json
+*-lock.json

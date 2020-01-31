@@ -1,0 +1,11 @@
+/*----------------------------------------------*\
+    #COMBINE BOTH THE FRAMEWORK & THEME
+\*----------------------------------------------*/
+
+@import 'foundation-sites/scss/foundation';  // ITS BEST PRACTICE TO NOT EDIT THE CORE
+@import 'theme/settings';       // EDIT AS YOU WISH
+
+@include foundation-everything();
+
+@import 'slick-carousel/slick/slick.scss';
+@import 'theme/theme';
