@@ -9,6 +9,7 @@ return [
     * The key is the namespace and key's value contains one or more paths to your classes.
     */
     'Theme\\Controllers\\' => resources_path('controllers'),
+    'Theme\\Controllers\\Traits\\' => resources_path('controllers/traits'),
     'Theme\\Providers\\' => resources_path('providers'),
     'Theme\\PostTypes\\' => resources_path('postTypes'),
     'Theme\\Shortcodes\\' => resources_path('shortcodes'),
