@@ -10,9 +10,7 @@
     	/**
 	     * @var array
 	     */
-    	public $scripts = [
-        	'style.css',
-    	];
+    	public $scripts = [];
     	
     	/**
 	     * Get scripts for controller
@@ -21,17 +19,9 @@
 	     */
     	public function getScripts() {
 	        
-	        $this->scripts = array_merge($this->scripts, [
-    	        [
-    	            'file' => 'app.js',
-    	            'localize' => [
-        	            'name' => 'myAjax',
-        	            'data' => [ 
-        	                'ajax_url' => admin_url( 'admin-ajax.php' )
-                        ]
-    	            ]
-                ]
-	        ]);
+	        wp_enqueue_script( 'jquery' );
+	        
+	        $this->loadManifest();
 	        
 	        return parent::getScripts();
 		}
