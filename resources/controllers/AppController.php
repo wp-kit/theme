@@ -3,7 +3,7 @@
 	namespace Theme\Controllers;
 	
 	use WPKit\Invoker\Controller;
-	use Illuminate\Support\Facades\Input;
+	use Illuminate\Support\Facades\Request;
 	
 	class AppController extends Controller {
     	
@@ -31,7 +31,7 @@
 	     *
 	     * @return void
 	     */
-		public function beforeFilter(Input $request) {
+		public function beforeFilter(Request $request) {
 			
 			add_action( 'app_header_menu', array($this, 'displayMenu') );
 			
