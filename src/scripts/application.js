@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import 'foundation-sites';
-import 'slick-carousel';
+import './modules';
+import '../styles/style.scss';
 
 __webpack_public_path__ = myAjax.dev_server_url;
 

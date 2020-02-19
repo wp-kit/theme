@@ -16,4 +16,5 @@ return [
 	WPKit\Shortcodes\ShortcodeServiceProvider::class,
     Theme\Providers\HttpServiceProvider::class,
     WPKit\Registry\RegistryServiceProvider::class,
+    WPKit\Integrations\Acf\AcfServiceProvider::class
 ];

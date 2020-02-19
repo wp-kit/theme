@@ -16,7 +16,8 @@
 		"wp-kit/foundation": "^2.0",
 		"wp-kit/registry": "^2.0",
 		"wp-kit/shortcodes": "^2.0",
-		"wp-kit/invoker": "^2.0.5"
+		"wp-kit/invoker": "^2.0.5",
+		"wp-kit/acf-integration": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~5.0"

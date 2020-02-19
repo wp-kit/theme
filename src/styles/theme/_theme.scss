@@ -72,7 +72,7 @@
 
 
 /*----------------------------------------------------------------------------*\
-    #COMPONENTS
+    #COMPONENTS AND BLOCKS
     
     Designed pieces of UI. Only using classes. More explicit naming.
 \*----------------------------------------------------------------------------*/
@@ -80,6 +80,8 @@
 @import 'components/app-head';          // Core header.
 @import 'components/app-main';          // Core main.
 @import 'components/app-foot';          // Core footer.
+
+@import 'blocks';
 
 
 

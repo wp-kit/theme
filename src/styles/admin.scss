@@ -1,12 +1,15 @@
-/*----------------------------------------------*\
-    #COMBINE BOTH THE FRAMEWORK & THEME
-\*----------------------------------------------*/
-
 @import 'foundation-sites/scss/foundation';  // ITS BEST PRACTICE TO NOT EDIT THE CORE
 @import 'theme/settings';       // EDIT AS YOU WISH
 
-@include foundation-everything();
+@include foundation-xy-grid-classes;
+@include foundation-flex-classes;
 
 @import 'slick-carousel/slick/slick.scss';
 @import 'slick-carousel/slick/slick-theme.scss';
-@import 'theme/theme';
+
+@import 'theme/helpers/spacing';              // Micro-level spacing.
+@import 'theme/blocks';
+
+.wp-block {
+	max-width: none;
+}

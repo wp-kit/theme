@@ -4,7 +4,7 @@ namespace Theme\Controllers\Traits;
 
 trait LoadsManifest {
 	
-	protected function loadManifest() {
+	protected function loadManifest($files = []) {
 			
 		if(!defined('WP_DEV_SERVER')) {
 			define('WP_DEV_SERVER', '');
@@ -15,6 +15,8 @@ trait LoadsManifest {
         if( file_exists( $manifest ) ) {
 	        
 	        $scripts = (array) json_decode(file_get_contents($manifest));
+	        
+	        $scripts = $files ? array_intersect_key($scripts, array_flip($files)) : $scripts;
 	        
 	        foreach(array_values($scripts) as $i => &$script) {
 		        

@@ -5,13 +5,18 @@ const webpack = require('webpack'),
 	manifest = require('webpack-manifest-plugin'),
 	uglify = require('uglifyjs-webpack-plugin');
 
-var appCss = new extract('build/css/app.[hash].css');
+const THEME = './';
+
+const appCss = new extract(`build/css/[name].[hash].css`);
 
 module.exports = {
-    entry: './src/scripts/application.js',
+    entry: {
+	    app: `${THEME}/src/scripts/application.js`,
+	    admin: `${THEME}/src/scripts/admin.js`
+	},
     output: {
-        filename: 'build/js/application.[hash:6].js',
-        path: path.resolve(__dirname, './')
+        filename: `./build/js/[name].[hash:6].js`,
+        path: path.resolve(__dirname, THEME)
     },
     resolve: {
         modules: [
@@ -55,6 +60,7 @@ module.exports = {
 				exclude: /(node_modules|bower_components)/,
 		        loader: 'babel-loader',
 		        options: {
+			      plugins: ["lodash", "@babel/plugin-transform-react-jsx"],
 		          presets: ['@babel/preset-env'],
 		        }
 			},
