@@ -5,15 +5,15 @@ export default ($preview, block) => {
 	
 	if( target ) {
 		
-		if( block.innerBlocks ) {
+		if( $preview.innerBlocks ) {
 			
-			target.appendChild(block.innerBlocks)
+			target.appendChild($preview.innerBlocks)
 			
 		} else {
 			
 			const innerBlocks = preview.closest('.wp-block').querySelector('.editor-inner-blocks')
 			
-			block.innerBlocks = innerBlocks
+			$preview.innerBlocks = innerBlocks
 			
 			target.appendChild(innerBlocks)
 			
