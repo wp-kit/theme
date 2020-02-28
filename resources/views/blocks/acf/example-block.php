@@ -1,6 +1,6 @@
 <div class="example">
 	
-	<h1>Hello <?php the_field('text'); ?>!</h1>
+	<h1>Hello <span contenteditable="<?= is_admin() ? 'true' : 'false'; ?>" data-attribute="text"><?php the_field('text'); ?></span>!</h1>
 	
 	<div class="js-inner-blocks">
 	
