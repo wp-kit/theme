@@ -9,11 +9,6 @@
 		
 		use Traits\LoadsManifest;
     	
-    	/**
-	     * @var array
-	     */
-    	public $scripts = [];
-    	
     	protected $scriptsAction = 'admin_enqueue_scripts';
     	
     	/**
