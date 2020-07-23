@@ -29,11 +29,11 @@
 		}
 		
 		/**
-	     * Before filter method used before every action
+	     * Default controller method when controller is invoked
 	     *
 	     * @return void
 	     */
-		public function beforeFilter(Request $request) {
+		public function boot(Request $request) {
 			
 			filter( 'block_categories', function($categories, $post) {
 				return array_merge(
@@ -47,9 +47,7 @@
 				);
 			}, 10, 2);
 			
-			add_action( 'app_header_menu', array($this, 'displayMenu') );
-			
-			parent::beforeFilter($request);
+			action( 'app_header_menu', 'displayMenu' );
 		}
 		
 		/**
