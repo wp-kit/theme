@@ -8,7 +8,7 @@
 		"preferred-install": "dist"
 	},
     "require": {
-	    "php": "^7.2",
+	    "php": "^7.4",
 		"filp/whoops": "^2.7",
 		"rcrowe/twigbridge": "^0.11",
 	    "illuminate/database": "^6.0",
