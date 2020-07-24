@@ -35,18 +35,6 @@
 	     */
 		public function boot(Request $request) {
 			
-			filter( 'block_categories', function($categories, $post) {
-				return array_merge(
-					$categories,
-					array(
-						array(
-							'slug' => 'wp-kit-example-blocks',
-							'title' => 'WP Kit Examples',
-						),
-					)
-				);
-			}, 10, 2);
-			
 			action( 'app_header_menu', 'displayMenu' );
 		}
 		
@@ -59,17 +47,6 @@
 			
 			echo view( 'app/header-menu', ['items' => get_nav_menu_items_by_location('header-menu')] );
             
-		}
-		
-		/**
-	     * Output block HTML
-	     *
-	     * @return string
-	     */
-		public static function renderBlock($block, $inner_blocks) {
-			
-			echo view('blocks.' . $block['name'], compact('block', 'inner_blocks'));
-			
 		}
 	
 	}
