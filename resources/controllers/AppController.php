@@ -4,15 +4,11 @@
 	
 	use WPKit\Invoker\Controller;
 	use Illuminate\Support\Facades\Request;
+	use WPKit\Invoker\Traits\LoadsManifest;
 	
 	class AppController extends Controller {
 		
-		use Traits\LoadsManifest;
-    	
-    	/**
-	     * @var array
-	     */
-    	public $scripts = [];
+		use LoadsManifest;
     	
     	/**
 	     * Get scripts for controller

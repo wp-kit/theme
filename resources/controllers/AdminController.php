@@ -4,10 +4,11 @@
 	
 	use WPKit\Invoker\Controller;
 	use Illuminate\Support\Facades\Request;
+	use WPKit\Invoker\Traits\LoadsManifest;
 	
 	class AdminController extends Controller {
 		
-		use Traits\LoadsManifest;
+		use LoadsManifest;
     	
     	protected $scriptsAction = 'admin_enqueue_scripts';
     	
