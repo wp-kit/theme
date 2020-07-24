@@ -26,7 +26,7 @@
 		    [
 			    'name' => 'example-block',
 			    'title' => 'Example Block',
-			    'category' => 'rest-kit-example-blocks',
+			    'category' => 'wp-kit-example-blocks',
 			    'icon' => 'welcome-widgets-menus',
 			    'description' => 'An example block',
 			    'has_inner_blocks' => true
@@ -34,7 +34,7 @@
 		    [
 			    'name' => 'slider-block',
 			    'title' => 'Slider Block',
-			    'category' => 'rest-kit-example-blocks',
+			    'category' => 'wp-kit-example-blocks',
 			    'icon' => 'welcome-widgets-menus',
 			    'description' => 'Used to display sliders'
 		    ]
@@ -42,8 +42,8 @@
 		
 		'block_categories' => [
 		    [
-				'slug' => 'rest-kit-example-blocks',
-				'title' => 'Rest Kit Examples',
+				'slug' => 'wp-kit-example-blocks',
+				'title' => 'WP Kit Examples',
 			]
 	   	],
 	
