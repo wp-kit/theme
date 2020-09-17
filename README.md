@@ -6,7 +6,7 @@
 
 ## Installation
 
-Download [Composer](https://getcomposer.org/download/) and install using this command
+Download [Composer](https://getcomposer.org/download/) and install using these commands
 
  ```php
 cd /path/to/wp-content/themes
