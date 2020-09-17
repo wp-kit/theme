@@ -8,6 +8,15 @@
 
 Download [Composer](https://getcomposer.org/download/) and install using these commands
 
+You need to be using at least PhP 7.4, make sure it's installed, and make sure Composer is using the correct PhP binar:
+
+```
+php -v
+composer -vvv about
+```
+
+Both should refer to a version >= PhP 7.4 if your local environment is setup correctly.
+
  ```php
 cd /path/to/wp-content/themes
 composer create-project wp-kit/theme=2.* theme --prefer-dist
