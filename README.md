@@ -9,7 +9,11 @@
 Download [Composer](https://getcomposer.org/download/) and install using this command
 
  ```php
+cd /path/to/wp-content/themes
 composer create-project wp-kit/theme=2.* theme --prefer-dist
+cd theme
+npm i
+npm run build
  ```
 
 ## When should you use wp-kit/theme?
