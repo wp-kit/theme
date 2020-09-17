@@ -8,7 +8,7 @@
 
 Download [Composer](https://getcomposer.org/download/) and install using these commands
 
-You need to be using at least PhP 7.4, make sure it's installed, and make sure Composer is using the correct PhP binar:
+You need to be using at least PhP 7.4, make sure it's installed, and make sure Composer is using the correct PhP binary:
 
 ```
 php -v
