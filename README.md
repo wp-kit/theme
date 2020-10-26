@@ -69,7 +69,7 @@ For details about contributing to the framework, please check the [contribution 
 
 ## Requirements
 
-Wordpress 4+
+Wordpress 5+
 
 PHP 7.4+
 
