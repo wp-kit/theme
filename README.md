@@ -1,7 +1,5 @@
 # wp-kit/theme
 
-<img src="https://travis-ci.org/wp-kit/theme.svg?branch=master" />
-
 ```wp-kit``` is a micro [```RAD```](https://en.wikipedia.org/wiki/Rapid_application_development) (Rapid Application Development) solution for ```Wordpress```.
 
 ## Installation
@@ -73,7 +71,7 @@ For details about contributing to the framework, please check the [contribution 
 
 Wordpress 4+
 
-PHP 5.6+
+PHP 7.4+
 
 Composer
 
