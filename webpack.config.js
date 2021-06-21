@@ -11,11 +11,11 @@ const appCss = new extract(`build/css/[name].[hash].css`);
 
 module.exports = {
     entry: {
-	    app: `${THEME}/src/scripts/application.js`,
-	    admin: `${THEME}/src/scripts/admin.js`
+	    app: `./src/scripts/application.js`,
+	    admin: `./src/scripts/admin.js`
 	},
     output: {
-        filename: `./build/js/[name].[hash:6].js`,
+        filename: `build/js/[name].[hash:6].js`,
         path: path.resolve(__dirname, THEME)
     },
     resolve: {
@@ -41,7 +41,7 @@ module.exports = {
             $: 'jquery'
         }),
 	    new clean([
-			'./build'
+			`${THEME}/build`
 		]),
 		appCss,
 		new manifest({
