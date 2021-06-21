@@ -17,7 +17,7 @@ Both should refer to a version >= PhP 7.4 if your local environment is setup cor
 
  ```php
 cd /path/to/wp-content/themes
-composer create-project wp-kit/theme=2.* theme --prefer-dist
+composer create-project wp-kit/theme theme --prefer-dist
 cd theme
 npm i
 npm run build
